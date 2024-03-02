@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "Instagram Button Remover",
+    "version": "1.0",
+    "description": "Remove like and comment buttons on Instagram",
+    "permissions": [
+      "storage",
+      "activeTab"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["*://www.instagram.com/*"],
+        "js": ["content.js"]
+      }
+    ]
+    }
+  
+  
