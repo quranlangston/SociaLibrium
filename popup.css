@@ -1,0 +1,89 @@
+/* Root color variables */
+:root {
+  --red: oklch(51.84% 0.147 23.77);
+  --black: oklch(20% 0.008 308.04);
+  --gray: oklch(24% 0.008 308.04);
+  --white: oklch(100% 0 264.51);
+  --label-background: oklch(80% 0.15 195); 
+  --checkbox-background: oklch(80% 0.15 195); 
+}
+
+body {
+  font-family: 'Courier New', monospace;
+  text-align: center;
+}
+
+.container {
+  max-width: 380px; 
+  max-height: fit-content;
+  margin: auto; 
+  padding: 10px;
+  background-color: var(--white);
+  border-radius: 30px;
+  box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+  padding-top:10px;
+  padding-bottom:10px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem; 
+  margin-bottom: 20px;
+  color: var(--red);
+  text-align: center;
+}
+
+p {
+  margin-bottom: 15px;
+  width: 380px;
+  text-align:center;
+}
+
+label {
+  font-size: 1rem;
+  padding: 0.4rem;
+  border-radius: 0.2rem;
+  text-align:center;
+  display:flex;
+
+}
+
+label:hover {
+  cursor: pointer;
+  background-color: var(--red);
+  text-align:center;
+}
+
+input[type="checkbox"] {
+  accent-color: var(--red);
+  transform: scale(1.0); /* Increased size of checkboxes */
+  margin-right: 10px;
+  background-color: var(--checkbox-background); /* Added background color for checkbox */
+  display: flex;
+  text-align: center;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background-color: var(--red);
+  color: var(--white);
+  border: none;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  text-align:center;
+}
+
+button:hover {
+  background-color: var(--white);
+  color: var(--black);
+  text-align:center;
+}
+
+#status {
+  margin-top: 15px;
+  font-style: italic;
+  text-align:center;
+}
+
+
+

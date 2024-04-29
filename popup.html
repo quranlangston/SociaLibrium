@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SociaLibrium</title>
+    <link rel="stylesheet" href="/popup/popup.css">
+</head>
+<body>
+    <div class="container">
+        <h1>SociaLibrium</h1>
+        <p> Restore the balance back to Instagram</p>
+        <form id="options-form">
+            <label>
+                <input type="checkbox" id="remove-like-button"> Remove Like Button
+            </label>
+            <label>
+                <input type="checkbox" id="remove-comment-button"> Remove Comment Button
+            </label>
+            <label>
+                <input type="checkbox" id="remove-share-button"> Remove Share Button
+            </label>
+            <label>
+                <input type="checkbox" id="remove-stories-button"> Remove Stories
+            </label>
+           <label> 
+                <input type="checkbox" id="remove-suggestedfollowers"> Remove Suggested Followers
+            </label>
+            <label> 
+                <input type="checkbox" id="remove-mainnavigationoptions"> Remove Main Navigation Options
+            </label>
+            <button type="submit">Save Changes</button>
+        </form>
+        <div id="status"></div>
+    </div>
+    <script src="/popup/popup.js"></script>
+</body>
+</html>

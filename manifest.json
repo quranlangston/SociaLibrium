@@ -1,18 +1,20 @@
 {
-    "manifest_version": 3,
-    "name": "SociaLibrium",
-    "version": "1.0",
-    "description": "Remove like and comment buttons on Instagram",
-    "permissions": [
-      "storage",
-      "activeTab"
-    ],
-    "content_scripts": [
-      {
-        "matches": ["*://www.instagram.com/*"],
-        "js": ["content.js"]
-      }
-    ]
+  "manifest_version": 3,
+  "name": "Social Librium",
+  "version": "1.0",
+  "description": "Restore Balance to instagram Part 333",
+  "permissions": [
+    "storage",
+    "activeTab"
+  ],
+  "action": {
+    "default_popup": "popup/popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://www.instagram.com/*"],
+      "js": ["/popup/popup.js"]
     }
-  
-  
+  ]
+}
+
